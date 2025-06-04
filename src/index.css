@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,20 +36,19 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Cyberpunk colors */
+    --cyber-cyan: 180 100% 50%;
+    --cyber-purple: 280 100% 50%;
+    --cyber-pink: 320 100% 50%;
+    --cyber-yellow: 60 100% 50%;
   }
 
   .dark {
@@ -96,6 +96,35 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
+  }
+
+  .font-orbitron {
+    font-family: "Orbitron", monospace;
+  }
+
+  .font-mono {
+    font-family: "Roboto Mono", monospace;
+  }
+}
+
+@layer utilities {
+  .cyber-glow {
+    box-shadow:
+      0 0 20px hsl(var(--cyber-cyan)),
+      0 0 40px hsl(var(--cyber-cyan)),
+      0 0 60px hsl(var(--cyber-cyan));
+  }
+
+  .cyber-glow-purple {
+    box-shadow:
+      0 0 20px hsl(var(--cyber-purple)),
+      0 0 40px hsl(var(--cyber-purple));
+  }
+
+  .cyber-glow-pink {
+    box-shadow:
+      0 0 20px hsl(var(--cyber-pink)),
+      0 0 40px hsl(var(--cyber-pink));
   }
 }
