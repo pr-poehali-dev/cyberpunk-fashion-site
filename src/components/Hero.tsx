@@ -59,13 +59,16 @@ const Hero = () => {
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-orbitron">
             CYBERPUNK
           </h1>
-          <h2 className="text-3xl lg:text-4xl font-bold text-cyan-300 mb-8 font-orbitron">
+          <h2 className="text-3xl lg:text-4xl font-bold text-cyan-300 mb-4 font-orbitron">
             МОД "НАГАСАКИ"
           </h2>
+          <h3 className="text-lg lg:text-xl text-red-400 mb-6 font-mono uppercase tracking-wider">
+            Робот "Гниение" (Corruption) v.G-11-07-I
+          </h3>
 
           <p className="text-xl text-gray-300 mb-8 leading-relaxed font-mono">
-            Новое оружие будущего. Лазерная катана, способная разрезать любую
-            материю. Персонаж пробуждается среди мусора киберпанк-города...
+            Сломанный робот, погребённый под грудой мусора киберпанк-города.
+            Единственный источник легендарной лазерной катаны "Нагасаки"...
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
